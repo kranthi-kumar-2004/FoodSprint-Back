@@ -22,7 +22,7 @@ import lombok.NoArgsConstructor;
 public class Restaurants {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int rest_id;
+    private Integer rest_id;
     private String rest_name;
     private float rest_rating;
     @OneToMany (mappedBy = "restaurant", cascade = CascadeType.ALL)
