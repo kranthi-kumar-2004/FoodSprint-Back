@@ -23,8 +23,7 @@ public class SpringSec {
             .authorizeHttpRequests(auth -> auth
                 .requestMatchers(
                     "/api/login",
-                    "/api/register",
-                    "/api/"
+                    "/api/register"
                 ).permitAll()
                 .anyRequest().authenticated()
             );

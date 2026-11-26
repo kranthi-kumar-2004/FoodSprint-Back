@@ -3,7 +3,6 @@ package com.example.FoodSprint_Back.Controllers;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -40,14 +39,5 @@ public class LoginController {
         return "Invalid Credentials";
     }
 
-    @GetMapping ("/")
-    public String ret(){
-        return "Hello";
-    }
-
-    @GetMapping ("/app")
-    public String reut(){
-        return "Hi";
-    }
 
 }
