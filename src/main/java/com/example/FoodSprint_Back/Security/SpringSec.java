@@ -25,6 +25,7 @@ public class SpringSec {
                     "/api/login",
                     "/api/register"
                 ).permitAll()
+                .requestMatchers("/api/restaurants/**").permitAll()
                 .anyRequest().authenticated()
             );
             return http.build();
